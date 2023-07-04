@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: 229, 231, 233;
   --background-start-rgb: 0, 101, 147;
@@ -42,7 +47,7 @@ body {
     transform: scale(1);  }
 
   50% {
-    transform: scale(1.1);  }
+    transform: scale(0.9);  }
 
   100% {
     transform: scale(1);

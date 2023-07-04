@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "./components/Footer.jsx";
-import Redes from "./components/Redes";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <div className="border-b w-full text-center border-gray-300 p-2 text-white text-xs md:text-base">
             Jeans de calidad. Precios increíbles. Venta solo por Mayor.{" "}
           </div>
-          <Redes/>
+          
         </div>
 
         {children}

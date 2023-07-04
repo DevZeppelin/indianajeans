@@ -1,11 +1,16 @@
 import Image from "next/image";
 import GridComponent from "./components/GridComponent";
 import { Jeans } from "./products.js";
+import { AiOutlineWoman, AiOutlineMan } from "react-icons/ai";
+import Redes from "./components/Redes";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <div className="relative flex place-items-center mt-4">
+        <a href="#damas">
+          <AiOutlineWoman className="text-right text-6xl text-pink-300 hover:scale-125 hover:text-pink-500" />
+        </a>
         <Image
           className="relative"
           src="/cartoon.png"
@@ -14,7 +19,11 @@ export default function Home() {
           height={200}
           priority
         />
+        <a href="#hombre">
+          <AiOutlineMan className="text-left text-6xl text-sky-300 hover:scale-125 hover:text-sky-500" />
+        </a>
       </div>
+
       <div className="relative flex place-items-center animate-logo">
         <Image
           className="relative p-4"
@@ -28,18 +37,16 @@ export default function Home() {
 
       <section
         name="BAJO LOGO"
-        className="flex flex-col text-center lg:w-96 px-6 pb-8"
+        className="flex flex-col text-center mx-auto lg:w-96 px-6 pb-8"
       >
         <span className="text-3xl">⭐⭐⭐</span>
         <p className="text-center">
           Pantalones de calidad, directo desde la fábrica hasta su domicilio
         </p>
+        <Redes/>
       </section>
 
-      <section
-        name="TIRA BLACK"
-        className="w-full bg-gray-800 p-6 text-center"
-      >
+      <section name="TIRA BLACK" className="w-full bg-gray-800 p-6 text-center">
         <div className="text-white text-center p-8 text-xl">
           ¡Mirá el catálogo, hacé tu pedido, y esperá la entrega!
         </div>
@@ -49,7 +56,9 @@ export default function Home() {
       </section>
 
       <section className="p-4 md:p-24">
-        <h1 className="text-3xl text-center px-6 mt-12 font-black">DAMAS</h1>
+        <h1 id="damas" className="text-3xl text-center px-6 mt-12 font-black">
+          DAMAS
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-12 mt-12 text-center">
           {Jeans.dama.map((dama) => (
             <GridComponent
@@ -62,7 +71,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <h1 className="text-3xl text-center px-6 mt-32 font-black">HOMBRE</h1>
+        <h1 id="hombre" className="text-3xl text-center px-6 mt-32 font-black">HOMBRE</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-12 mt-12 text-center">
           {Jeans.hombre.map((hombre) => (
             <GridComponent
