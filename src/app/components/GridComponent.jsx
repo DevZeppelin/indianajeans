@@ -11,7 +11,7 @@ const GridComponent = ({name, src, text, talles,precio}) => {
             alt={text}
             width={800}
             height={800}
-            className="gridImage imagen-filtro rounded-2xl h-full border-2 border-slate-400"  
+            className="rounded-2xl h-80 border-2 border-slate-400"  
             />
         </div>
         <p className="text-base italic ">{talles}</p>
