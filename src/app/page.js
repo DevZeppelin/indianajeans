@@ -33,16 +33,16 @@ export default function Home() {
         className="flex flex-col text-center mx-auto lg:w-96 px-6 pb-8 space-y-2 text-slate-800"
       >
         <span className="text-2xl">⭐⭐⭐</span>
-        <p className="text-center">
+        <p className="text-center p-4 mx-6">
           Pantalones de calidad, directo desde la fábrica hasta su domicilio
         </p>
         <Redes />
       </section>
 
-      <section name="TIRA BLACK" className="w-full bg-gray-800 p-6 pb-16 text-center text-base">
+      <section name="TIRA BLACK" className="w-full bg-gray-800 p-4 md:p-6 pb-16 text-center text-base">
         <div className="text-white flflex-col text-center p-4 text-xl">
-          <code>Mirá nuestro catálogo...</code>
-          <code className="mb-8">💲 ¡no vas a creer nuestros precios! 💲</code>
+          <code>Mirá nuestro catálogo 👖 </code>
+          <p className="mb-2">¡no vas a creer los precios! 😎</p>
         </div>
         <div className="p-2 border-2 w-48 flex mx-auto mt-4 border-sky-700 rounded-lg hover:bg-sky-900">
           Compra mínima: 20 unidades
