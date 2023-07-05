@@ -9,37 +9,30 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <div className="relative flex place-items-center mt-4">
         <a href="#damas">
-          <AiOutlineWoman className="text-right text-6xl text-pink-300 hover:scale-125 hover:text-pink-500" />
+          <AiOutlineWoman className="text-right text-6xl text-violet-500 hover:scale-125 hover:text-violet-700" />
         </a>
-        <Image
-          className="relative"
-          src="/cartoon.png"
-          alt="Indiana Jeas Logo"
-          width={200}
-          height={200}
-          priority
-        />
+        
         <a href="#hombre">
-          <AiOutlineMan className="text-left text-6xl text-sky-300 hover:scale-125 hover:text-sky-500" />
+          <AiOutlineMan className="text-left text-6xl text-sky-700 hover:scale-125 hover:text-sky-900" />
         </a>
       </div>
 
-      <div className="relative flex place-items-center animate-logo">
+      <div className="relative flex place-items-center animate-logo p-4">
         <Image
-          className="relative p-4"
-          src="/logo.png"
+          className="relative"
+          src="/logo3.png"
           alt="Indiana Jeas Logo"
           width={600}
-          height={150}
+          height={600}
           priority
         />
       </div>
 
       <section
         name="BAJO LOGO"
-        className="flex flex-col text-center mx-auto lg:w-96 px-6 pb-8"
+        className="flex flex-col text-center mx-auto lg:w-96 px-6 pb-8 space-y-2 text-slate-800"
       >
-        <span className="text-3xl">⭐⭐⭐</span>
+        
         <p className="text-center">
           Pantalones de calidad, directo desde la fábrica hasta su domicilio
         </p>
@@ -47,8 +40,9 @@ export default function Home() {
       </section>
 
       <section name="TIRA BLACK" className="w-full bg-gray-800 p-6 text-center">
-        <div className="text-white text-center p-8 text-xl">
-          <p>Mirá nuestro catálogo...</p> <p>¡no vas a creer nuestros precios!</p>
+        <div className="text-white text-center p-4 text-xl">
+          <p>Mirá nuestro catálogo...</p>
+          <p className="mb-4">¡no vas a creer nuestros precios!</p>
         </div>
         <span className="p-2 border-2 border-sky-700 rounded-lg hover:bg-sky-900">
           Compra mínima: 20 unidades
@@ -56,8 +50,8 @@ export default function Home() {
       </section>
 
       <section className="p-4 md:p-24">
-        <AiOutlineWoman id="damas" className="mx-auto text-6xl text-pink-300 hover:scale-125 hover:text-pink-500" />
-        <h1  className="text-3xl text-center px-6 font-black">
+        <AiOutlineWoman id="damas" className="mx-auto text-6xl text-violet-500 hover:scale-125 hover:text-violet-800" />
+        <h1  className="text-3xl text-center px-6 font-black text-black">
           DAMAS
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-12 mt-12 text-center">
@@ -72,7 +66,8 @@ export default function Home() {
             />
           ))}
         </div>
-        <AiOutlineMan id="hombre" className="mx-auto text-6xl text-sky-300 hover:scale-125 hover:text-sky-500" />
+
+        <AiOutlineMan id="hombre" className="mx-auto text-6xl text-sky-700 hover:scale-125 hover:text-sky-500" />
         <h1 className="text-3xl text-center px-6 font-black">
           HOMBRES
         </h1>

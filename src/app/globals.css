@@ -10,13 +10,15 @@ html {
 :root {
   --foreground-rgb: 229, 231, 233;
   --background-start-rgb: 0, 101, 147;
+  --background-mid-rgb: 100, 100, 100;
   --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 229, 231, 233;
-    --background-start-rgb: 0, 101, 147;
+    --background-start-rgb: 217, 217, 217;
+    --background-mid-rgb: 100, 100, 100;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -32,14 +34,15 @@ body {
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
+    )    
+    
     rgb(var(--background-start-rgb));
 }
 
 
 .animate-logo {
   position: relative;
-  animation: animate 5s infinite;
+  animation: animate 8s infinite;
 }
 
 @keyframes animate {
@@ -47,7 +50,7 @@ body {
     transform: scale(1);  }
 
   50% {
-    transform: scale(0.9);  }
+    transform: scale(0.95);  }
 
   100% {
     transform: scale(1);
