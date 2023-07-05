@@ -9,15 +9,15 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between ">
       <div className="relative flex place-items-center mt-4">
         <a href="#damas">
-          <AiOutlineWoman className="text-right text-6xl text-violet-500 hover:scale-125 hover:text-violet-700" />
+          <AiOutlineWoman className="fixed bottom-40 z-30 right-0 md:right-5 text-right text-6xl text-violet-500 hover:scale-125 hover:text-violet-700" />
         </a>
         
         <a href="#hombre">
-          <AiOutlineMan className="text-left text-6xl text-sky-700 hover:scale-125 hover:text-sky-900" />
+          <AiOutlineMan className="fixed bottom-24 z-20 right-0 md:right-5 text-left text-6xl text-sky-700 hover:scale-125 hover:text-sky-900" />
         </a>
       </div>
 
-      <div className="relative flex place-items-center animate-logo p-4">
+      <div className="relative flex place-items-center animate-logo p-4 py-10 md:py-4">
         <Image
           className="relative"
           src="/logo3.png"
@@ -32,21 +32,21 @@ export default function Home() {
         name="BAJO LOGO"
         className="flex flex-col text-center mx-auto lg:w-96 px-6 pb-8 space-y-2 text-slate-800"
       >
-        
+        <span className="text-2xl">⭐⭐⭐</span>
         <p className="text-center">
           Pantalones de calidad, directo desde la fábrica hasta su domicilio
         </p>
         <Redes />
       </section>
 
-      <section name="TIRA BLACK" className="w-full bg-gray-800 p-6 text-center">
-        <div className="text-white text-center p-4 text-xl">
-          <p>Mirá nuestro catálogo...</p>
-          <p className="mb-4">¡no vas a creer nuestros precios!</p>
+      <section name="TIRA BLACK" className="w-full bg-gray-800 p-6 pb-16 text-center text-base">
+        <div className="text-white flflex-col text-center p-4 text-xl">
+          <code>Mirá nuestro catálogo...</code>
+          <code className="mb-8">💲 ¡no vas a creer nuestros precios! 💲</code>
         </div>
-        <span className="p-2 border-2 border-sky-700 rounded-lg hover:bg-sky-900">
+        <div className="p-2 border-2 w-48 flex mx-auto mt-4 border-sky-700 rounded-lg hover:bg-sky-900">
           Compra mínima: 20 unidades
-        </span>
+        </div>
       </section>
 
       <section className="p-4 md:p-24">
@@ -84,6 +84,14 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <Image
+          className="relative"
+          src="/cartoon.png"
+          alt="Indiana Jeas Logo"
+          width={200}
+          height={75}
+          priority
+        />
     </main>
   );
 }
