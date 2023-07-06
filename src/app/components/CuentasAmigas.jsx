@@ -3,7 +3,7 @@ import Image from "next/image";
 const CuentasAmigas = () => {
   return (
     <section id="AMIGOS" className="flex flex-col justify-center">
-      <p className="text-2xl mx-auto mt-12 uppercase">Marcas amigas</p>
+      <p className="text-2xl mx-auto mt-12 uppercase font-extrabold">Emprendedores amigos</p>
 
       <div className="grid md:grid-cols-3 mx-16">
         <a href="https://www.devzeppelin.ar" target="_blank">
@@ -37,12 +37,21 @@ const CuentasAmigas = () => {
           />
         </a>
       </div>
+
       <Image
         className="relative mx-auto mt-12"
         src="/cartoon.png"
         alt="Indiana Jeas Logo"
         width={200}
         height={75}
+        priority
+      />
+      <Image
+        className="relative mx-auto z-40 px-8"
+        src="/oldlogo.png"
+        alt="Indiana Jeas Logo"
+        width={600}
+        height={100}
         priority
       />
     </section>
