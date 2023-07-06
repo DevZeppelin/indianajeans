@@ -14,9 +14,9 @@ const GridComponent = ({name, src, text, talles,precio,bg}) => {
             className="rounded-t-2xl border-2 border-gray-800"  
             />
         </div>
-        <div className="bg-zinc-800 py-2 rounded-b-xl border-1 border-sky-900 h-28">
+        <div className="bg-zinc-800 py-0 rounded-b-xl border-1 border-sky-900 h-20">
           <code className="text-base ">{talles}</code>
-          <p className="pt-1 italic text-sm md:text-base p-1">{text}</p>
+          <p className=" italic text-sm md:text-sm px-1">{text}</p>
           <span className="text-xl italic font-semibold">$ {precio}</span>
         </div>
          
